@@ -1,0 +1,13 @@
+icons:
+
+File MyClass1.scala with class MyClass
+
+File MyClass2.scala with object MyClass1
+
+File MyClass3.scala with trait MyClass2
+
+File MyClass4.scala with class MyClass4 and companion object MyClass4
+
+File MyClass5.scala with trait MyClass5 and companion object MyClass5
+
+File MyClass6.scala that contains not only (or different from) object, trait or class MyClass6 (and possibly its companion object). For example here file MyClass6.scala contains class MyClass6 and class MyClass7.

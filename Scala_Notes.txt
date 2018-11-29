@@ -1,0 +1,86 @@
+SCALA NOTES
+
+- Functional and OO language (hybrid)
+
+- No non-objects. Everything is an object
+    -no primitives
+    -no static methods or fields
+    -numbers and literals are objects
+    -functions and values are objects
+
+- Pure functions: not related with objects
+
+- Higher-order functions:
+
+- Runs on JVM, easy migration to existing programs.
+
+- Nice libraries for Scala (akka, play)
+
+- Couple of ways to run Scala:
+    - Interpreter (REPL)
+    - Shell scripts (ex: resources/scala_script.sh)
+    - Compiler (scalac)
+
+=======================
+
+Syntax:
+
+(compiling with sbt clean compile)
+
+-variable declarations:
+    - val: Creates an immutable Value (not variable). val is a constant. Immutability is key in Scala.
+        ex:
+        val language: String = "Scala";
+
+    - var: Modifiable Value.
+        ex:
+        var language: String = "Scala";
+
+- Type inference, so we don't have to say it's a String.
+
+- Semi-colons only needed when using several expressions on same line.
+
+-function declarations:
+    ex: def add( x: Int, y:Int) : Int
+
+    -types of method arguments are required.
+    -you can drop the return statement, last statement will be the return.
+    -return type of method is inferred
+    (def add( x: Int, y:Int) = if(x<y) x ; else y;
+        or
+     def add( x: Int, y:Int)=
+     { if(x<y)
+      x
+     else
+      y
+     }
+
+- (call by name) supports lazy evaluation
+
+=============================
+
+- Operators in Scala are methods.
+
+    ex: asterisk is a multiplication method.
+     age * .5
+        equals to
+     def * (x: Double) : Double
+
+//Infix notation
+- Cleaner way to work with this is infix notation
+
+    You can call asterisk on a variable with dot operator. But Scala offers a cleaner way to work. Due to this, we can drop the .dot notation. We can use both ways.
+
+    example:
+    if you have a Train object and passengers are added
+    we can have a "train addPassengers 5" declaration.
+
+    This is optional, but allows you to define methods such as plus and minus operators to be used. Comes in handly when it is
+
+//Collections
+
+    -comes with immutable and mutable collections
+
+
+
+
